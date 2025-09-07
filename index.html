@@ -1,56 +1,317 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SolarMaster 太陽能知識</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Noto Sans TC', sans-serif;
-      background-color: #FDFBF7;
-      color: #1A2E44;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李振榮 太陽能專家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #F7FAFC; /* Light background */
+            color: #2D3748;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .text-solar-blue {
+            color: #3182CE; /* A vibrant blue for links and accents */
+        }
+        .bg-solar-blue {
+            background-color: #3182CE;
+        }
+        .btn-primary {
+            @apply bg-solar-blue text-white font-bold py-3 px-8 rounded-full transition-all duration-300;
+        }
+        .btn-primary:hover {
+            @apply bg-blue-700 shadow-lg;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #E2E8F0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: #F6AD55; /* Warm orange accent */
+            border-radius: 9999px;
+        }
+        a {
+            color: #3182CE;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #2C5282;
+            text-decoration: underline;
+        }
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+        }
+    </style>
 </head>
-<body class="antialiased">
+<body class="bg-gray-50">
 
-  <!-- Header -->
-  <header class="bg-blue-900 text-white p-6 text-center shadow-md">
-    <h1 class="text-3xl font-bold">SolarMaster 太陽能知識平台</h1>
-    <p class="mt-2 text-lg">探索太陽能的材質與發電流程</p>
-  </header>
+    <header class="bg-white shadow-sm py-12 md:py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">李振榮</h1>
+            <p class="text-xl md:text-2xl mt-2 text-gray-600">讓太陽能為您帶來穩定收益的專家</p>
+        </div>
+    </header>
 
-  <!-- Main -->
-  <main class="container mx-auto px-6 py-12">
+    <main class="py-12 md:py-16">
+        <div class="container mx-auto px-6 space-y-12">
 
-    <!-- 第一張圖：太陽能板材質說明 -->
-    <section class="mb-16 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">太陽能板材質說明</h2>
-      <img src="solar-module-layers.jpg"
-           alt="太陽能板材質說明"
-           class="mx-auto shadow-lg rounded-lg max-w-3xl">
-      <p class="mt-4 text-gray-600">從多晶砂 → 矽晶棒 → 矽晶片 → 電池模組 → 太陽能板的結構組成。</p>
-    </section>
+            <!-- 核心理念 Section -->
+            <section class="card rounded-xl p-8 md:p-12 text-center">
+                <h2 class="section-title text-3xl font-bold text-gray-800 mb-6">我的核心理念</h2>
+                <p class="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                    憑藉我在台灣大學、中央大學與逢甲大學的學術養成，以及在多家能源公司擔任核心職務的實務經驗，我將專業知識與實務操作完美結合，致力於為每一位客戶打造**高效、安全、合規**的太陽能發電系統，讓您的屋頂或土地成為穩定的資產。
+                </p>
+            </section>
 
-    <!-- 第二張圖：太陽能發電運作流程 -->
-    <section class="text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">太陽能發電運作流程</h2>
-      <img src="power-flow.png"
-           alt="太陽能發電運作流程"
-           class="mx-auto shadow-lg rounded-lg max-w-4xl">
-      <p class="mt-4 text-gray-600">太陽能模組產生直流電，經過變流器轉換成交流電，最後送入台電電網。</p>
-    </section>
+            <!-- 專業資歷 Section -->
+            <section class="card rounded-xl p-8 md:p-12">
+                <h2 class="section-title text-3xl font-bold text-gray-800 mb-6">我的專業資歷</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-blue-50 rounded-lg border border-blue-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">緯萱新能源科技股份有限公司</h3>
+                        <p class="text-sm text-gray-600">董事長</p>
+                        <p class="text-sm text-gray-500 mt-1">專注於綠能科技應用與產業創新。</p>
+                        <a href="https://www.findcompany.com.tw/index.php/%E7%B7%AF%E8%90%B1%E6%96%B0%E8%83%BD%E6%BA%90%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" target="_blank" class="text-solar-blue hover:text-blue-700 mt-2 block">查看公司資訊 →</a>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg border border-blue-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">昱金生科技股份有限公司</h3>
+                        <p class="text-sm text-gray-600">副總經理</p>
+                        <p class="text-sm text-gray-500 mt-1">負責太陽能電廠規劃與專案管理。</p>
+                        <a href="https://www.twincn.com/item.aspx?no=83687391" target="_blank" class="text-solar-blue hover:text-blue-700 mt-2 block">查看公司資訊 →</a>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg border border-blue-100">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">泰陽電力有限公司</h3>
+                        <p class="text-sm text-gray-600">董事</p>
+                        <p class="text-sm text-gray-500 mt-1">致力於提供全面的太陽能發電解決方案。</p>
+                        <a href="https://www.twincn.com/item.aspx?no=60740519" target="_blank" class="text-solar-blue hover:text-blue-700 mt-2 block">查看公司資訊 →</a>
+                    </div>
+                </div>
+            </section>
 
-  </main>
+            <!-- 學歷 Section -->
+            <section class="card rounded-xl p-8 md:p-12">
+                <h2 class="section-title text-3xl font-bold text-gray-800 mb-6">學歷背景</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 leading-relaxed mx-auto max-w-2xl">
+                    <li>國立臺灣大學 EMBA 碩士</li>
+                    <li>國立中央大學 光電碩士</li>
+                    <li>逢甲大學 自動控制系</li>
+                </ul>
+            </section>
+            
+            <!-- 太陽能建置 Section with Images -->
+            <section class="card rounded-xl p-8 md:p-12 text-center">
+                <h2 class="section-title text-3xl font-bold text-gray-800 mb-6">太陽能建置流程與核心技術</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto">
+                    我們提供一站式太陽能建置服務，從最基本的發電原理到高效穩定的系統建置，每一個環節都精準把控，確保為您帶來長期的穩定收益。
+                </p>
+                <div class="space-y-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">太陽能發電運作流程</h3>
+                        <img src="solar-module-layers.jpg" alt="太陽能發電流程圖" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-sm text-gray-600">從太陽能模組接收光能，經變流器轉換成家用交流電，最終併入市電電網，為您創造收益。</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">太陽能板模組結構</h3>
+                        <img src="power-flow.png" alt="太陽能板材質結構圖" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-sm text-gray-600">我們選用高品質的矽晶片、玻璃與鋁框，確保太陽能板堅固耐用，能承受台灣多變的氣候。</p>
+                    </div>
+                </div>
+            </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center p-4 mt-12">
-    <p>&copy; 2025 SolarMaster. All Rights Reserved.</p>
-  </footer>
+            <!-- 評估表單 Section -->
+            <section id="form-section" class="card rounded-xl p-8 md:p-12">
+                <h2 class="section-title text-3xl font-bold text-gray-800 mb-6">立即啟動您的評估</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto">
+                    請填寫以下資訊，我們的專業團隊將為您進行免費的初步評估，並規劃專屬的太陽能建置方案。
+                </p>
 
+                <div class="max-w-xl mx-auto">
+                    <form id="evaluation-form" class="space-y-6" target="_blank">
+
+                        <!-- Step 1: Roof Type -->
+                        <div class="form-step active" data-step="1">
+                            <label class="text-gray-700 text-lg font-semibold mb-2 block">您的場地類型是？</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <label class="p-4 bg-gray-100 rounded-lg border-2 border-transparent hover:border-solar-blue transition-colors cursor-pointer">
+                                    <input type="radio" name="rooftype" value="鐵皮屋頂" class="mr-2" required>
+                                    鐵皮屋頂
+                                </label>
+                                <label class="p-4 bg-gray-100 rounded-lg border-2 border-transparent hover:border-solar-blue transition-colors cursor-pointer">
+                                    <input type="radio" name="rooftype" value="水泥平頂" class="mr-2">
+                                    水泥平頂
+                                </label>
+                                <label class="p-4 bg-gray-100 rounded-lg border-2 border-transparent hover:border-solar-blue transition-colors cursor-pointer">
+                                    <input type="radio" name="rooftype" value="斜屋頂" class="mr-2">
+                                    斜屋頂
+                                </label>
+                                <label class="p-4 bg-gray-100 rounded-lg border-2 border-transparent hover:border-solar-blue transition-colors cursor-pointer">
+                                    <input type="radio" name="rooftype" value="農地/土地" class="mr-2">
+                                    農地/土地
+                                </label>
+                            </div>
+                            <div class="flex justify-end mt-6">
+                                <button type="button" onclick="nextStep()" class="btn-primary">下一步</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Location -->
+                        <div class="form-step" data-step="2">
+                            <label for="location" class="text-gray-700 text-lg font-semibold mb-2 block">您的場地所在縣市？</label>
+                            <input type="text" id="location" name="location" placeholder="例如：台北市、台中市" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-solar-blue" required>
+                            <div class="flex justify-between mt-6">
+                                <button type="button" onclick="prevStep()" class="btn-primary bg-gray-400 hover:bg-gray-500">上一步</button>
+                                <button type="button" onclick="nextStep()" class="btn-primary">下一步</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Contact Info -->
+                        <div class="form-step" data-step="3">
+                            <label class="text-gray-700 text-lg font-semibold mb-2 block">留下您的聯絡資訊</label>
+                            <input type="text" id="name" name="name" placeholder="您的姓名" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-solar-blue mb-4" required>
+                            <input type="tel" id="phone" name="phone" placeholder="聯絡電話" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-solar-blue mb-4" required>
+                            <input type="email" id="email" name="email" placeholder="電子郵件" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-solar-blue mb-4" required>
+                            <div class="flex justify-between mt-6">
+                                <button type="button" onclick="prevStep()" class="btn-primary bg-gray-400 hover:bg-gray-500">上一步</button>
+                                <button type="submit" class="btn-primary">送出評估</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div id="message-box" class="hidden mt-6 px-4 py-3 rounded-lg relative border">
+                        <strong class="font-bold" id="message-title"></strong>
+                        <span class="block sm:inline" id="message-text"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-10 mt-12 text-center text-gray-500 text-sm">
+        <p>Copyright © 2024 李振榮. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentStep = 1;
+        const formSteps = document.querySelectorAll('.form-step');
+        const messageBox = document.getElementById('message-box');
+        const messageTitle = document.getElementById('message-title');
+        const messageText = document.getElementById('message-text');
+
+        function updateFormSteps() {
+            formSteps.forEach(step => {
+                const stepNumber = parseInt(step.dataset.step);
+                if (stepNumber === currentStep) {
+                    step.classList.add('active');
+                } else {
+                    step.classList.remove('active');
+                }
+            });
+        }
+
+        function nextStep() {
+            const currentActiveStep = document.querySelector('.form-step.active');
+            const requiredInputs = currentActiveStep.querySelectorAll('[required]');
+            let allValid = true;
+
+            requiredInputs.forEach(input => {
+                if (!input.checkValidity()) {
+                    allValid = false;
+                    input.reportValidity();
+                }
+            });
+
+            if (allValid) {
+                if (currentStep < formSteps.length) {
+                    currentStep++;
+                    updateFormSteps();
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateFormSteps();
+            }
+        }
+
+        document.getElementById('evaluation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // TODO: REPLACE THIS URL WITH YOUR GOOGLE FORM'S URL
+            const formUrl = "YOUR_GOOGLE_FORM_URL/formResponse";
+            
+            // TODO: UPDATE THESE 'entry' IDS TO MATCH YOUR GOOGLE FORM
+            const roofTypeEntry = "entry.XXXXXXXXXX";
+            const locationEntry = "entry.XXXXXXXXXX";
+            const nameEntry = "entry.XXXXXXXXXX";
+            const phoneEntry = "entry.XXXXXXXXXX";
+            const emailEntry = "entry.XXXXXXXXXX";
+            
+            const formData = new FormData();
+            formData.append(roofTypeEntry, document.querySelector('input[name="rooftype"]:checked')?.value || '');
+            formData.append(locationEntry, document.getElementById('location').value);
+            formData.append(nameEntry, document.getElementById('name').value);
+            formData.append(phoneEntry, document.getElementById('phone').value);
+            formData.append(emailEntry, document.getElementById('email').value);
+
+            fetch(formUrl, {
+                method: 'POST',
+                body: new URLSearchParams(formData),
+                mode: 'no-cors'
+            })
+            .then(() => {
+                messageBox.classList.remove('hidden', 'bg-red-100', 'border-red-400', 'text-red-700');
+                messageBox.classList.add('bg-green-100', 'border-green-400', 'text-green-700');
+                messageTitle.textContent = "成功！";
+                messageText.textContent = "您的評估申請已送出，感謝您！我們的團隊會盡快與您聯繫。";
+                
+                // Reset form and go back to step 1
+                setTimeout(() => {
+                    document.getElementById('evaluation-form').reset();
+                    currentStep = 1;
+                    updateFormSteps();
+                    messageBox.classList.add('hidden');
+                }, 5000);
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+                messageBox.classList.remove('hidden', 'bg-green-100', 'border-green-400', 'text-green-700');
+                messageBox.classList.add('bg-red-100', 'border-red-400', 'text-red-700');
+                messageTitle.textContent = "失敗！";
+                messageText.textContent = "送出時發生錯誤，請稍後再試。";
+            });
+        });
+
+        updateFormSteps();
+    </script>
 </body>
 </html>
